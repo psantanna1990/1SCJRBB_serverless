@@ -2,7 +2,7 @@
 
 Para desenvolvimento deste projeto foi utilizada a seguinte stack:
 
-    framework : (serverless.com)[https://www.serverless.com/]
+    framework : [serverless.com](https://www.serverless.com/)
     linguagem: node(javascript)
 
 ## Equipe
