@@ -1,0 +1,23 @@
+service: sls-1scjrbb-trabalho-serverless
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: ${opt:stage, 'dev'}
+  region: ${opt:region, 'us-east-1'}
+  memorySize: 128
+  timeout: 3
+
+functions:
+  index:
+    handler: index.handler
+    description: trabalho de serverless
+    memorySize: 128
+    timeout: 3
+    events:
+      - http:
+          path: /
+          method: post
+          cors: true
+    environment:
+      HOOK_TEAMS: "https://fiapcom.webhook.office.com/webhookb2/8cf1d42e-933f-4b80-9131-bb37825418c5@11dbbfe2-89b8-4549-be10-cec364e59551/IncomingWebhook/4ba55612caf4458e8219853cda4ba8c0/d608e7ec-30ea-4201-982c-decd644ea708"
