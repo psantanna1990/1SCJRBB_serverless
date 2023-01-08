@@ -45,12 +45,16 @@ Para enviar a mensgem necessário executar o seguinte POST (Alterar a URL pela f
 
    ![local da url](./img/endpoint.PNG)
 
-
 ## Desprovisionamento do ambiente
 
-Para desprovisionar o ambiente executar o comando: 
+Para desprovisionar o ambiente executar o comando:
 
     `serverless remove`
+
+## Estrutura do Projeto
+
+O projeto possui os arquivos padrões de uma aplicação Node, porém para a execução do framework tem que se atentar principalmente a dois arquivos [serverless.yml](./serverless.yml) e o [index.js](./index.js)
+
 ## Equipe
 
 - Carlos Mateus Borges Junior - RM344974
