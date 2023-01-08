@@ -7,6 +7,22 @@ Para desenvolvimento deste projeto foi utilizada a seguinte stack:
 
 ## Funcionalidade da aplicação
 
+A aplicação consiste em uma função lambda que ao receber uma requisição HTTP (POST) envia uma notificação no MSTeams utilizado [AdaptativeCard](https://adaptivecards.io/).
+
+Esta mensagem consiste em um título e um corpo ambos em texto.
+
+![exemplo de notificação](./img//mensagemNoTeams.PNG)
+
+Para enviar a mensgem necessário executar o seguinte POST (Alterar a URL pela fornecida no passo 5 da sessão Executando o Projeto):
+
+`curl --request POST \
+  --url <URL PASSO_5_DA _SESSAO_EXECUTANDO_ O _PROJETO> \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"titulo": "Titulo da Mensagem",
+	"mensagem": "Esta mensagem chegou aqui através de uma Lambda"
+}'`
+
 ## Executando o projeto
 
 1. Configurar as credencias de usuário do IAM da AWS
@@ -26,7 +42,7 @@ Para desenvolvimento deste projeto foi utilizada a seguinte stack:
    `serverless deploy`
 
 5. Copiar o endpoint informado no final da execução do comando anterior
-   
+
    ![local da url](./img/endpoint.PNG)
 
 ## Equipe
