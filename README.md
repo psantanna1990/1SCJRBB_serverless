@@ -45,6 +45,12 @@ Para enviar a mensgem necessário executar o seguinte POST (Alterar a URL pela f
 
    ![local da url](./img/endpoint.PNG)
 
+
+## Desprovisionamento do ambiente
+
+Para desprovisionar o ambiente executar o comando: 
+
+    `serverless remove`
 ## Equipe
 
 - Carlos Mateus Borges Junior - RM344974
