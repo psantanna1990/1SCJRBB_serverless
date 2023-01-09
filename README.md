@@ -55,6 +55,34 @@ Para desprovisionar o ambiente executar o comando:
 
 O projeto possui os arquivos padrões de uma aplicação Node, porém para a execução do framework tem que se atentar principalmente a dois arquivos [serverless.yml](./serverless.yml) e o [index.js](./index.js)
 
+### index.js
+
+Possui a lógica da aplicação, a função **handler** que é chamada para a execução da Lambda.
+
+### serverless.yaml
+
+Arquivo de configuração do framework.
+
+1.  Na seção service defino o nome do meu projeto
+
+    ![imagem serverless](./img/serverlessService.PNG)
+
+2.  Na seção provider declaramos qual o provedor que utilizaremos podendo ser AWS, Azure ou outros. [Lista de Providres](https://www.serverless.com/framework/docs/providers).
+
+    Declaramos a runtime no nossa caso nodejs12.x e algumas outras opções
+
+    ![imagem provider](./img/serverlessProvider.PNG)
+
+3.  Na seção functions declaramos as nossa funções no caso possuimos a index
+
+    handler: qual a função que chmaremos
+    memorySize: memória que nossa função poderá utilizar
+    timeout: tempo de timeout da minha função
+    events: aqui colocamos os eventos que podemos utilizar nesse caso está configurado o API GAteway
+    environment: variáveis de ambiente declarado de igual em um "docker-compose"
+
+    ![function](./img/serverlessFunction.PNG)
+
 ## Equipe
 
 - Carlos Mateus Borges Junior - RM344974

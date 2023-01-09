@@ -13,7 +13,7 @@ functions:
     handler: index.handler
     description: trabalho de serverless
     memorySize: 128
-    timeout: 3
+    timeout: 5
     events:
       - http:
           path: /
