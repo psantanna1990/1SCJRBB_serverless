@@ -76,9 +76,13 @@ Arquivo de configuração do framework.
 3.  Na seção functions declaramos as nossa funções no caso possuimos a index
 
     handler: qual a função que chmaremos
+    
     memorySize: memória que nossa função poderá utilizar
+    
     timeout: tempo de timeout da minha função
+    
     events: aqui colocamos os eventos que podemos utilizar nesse caso está configurado o API GAteway
+    
     environment: variáveis de ambiente declarado de igual em um "docker-compose"
 
     ![function](./img/serverlessFunction.PNG)
